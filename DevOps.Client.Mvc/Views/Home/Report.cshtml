@@ -1,0 +1,21 @@
+﻿@model DevOps.Client.Mvc.Models.ReportModel
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <label class="control-label">Servicio</label>
+            <select class="form-control" name="evaluation.Evaluation.idService" id="SelReportService">
+                <option value=0>-- Servicios --</option>
+                @foreach (var itm in Model.services)
+                {
+                    <option value=@itm.idService>@itm.nameService</option>
+                }
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" id="divEval">
+        @Html.Partial("_DetailReport", Model.evaluations)
+    </div>
+</div>

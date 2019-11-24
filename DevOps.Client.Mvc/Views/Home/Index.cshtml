@@ -1,0 +1,100 @@
+﻿@model DevOps.Client.Mvc.Models.FormEvaluationModel
+@{
+    ViewBag.Title = "Evaluación de satisfacción del cliente";
+}
+<div class="row">
+    @using (Html.BeginForm("Evaluate", "Home", FormMethod.Post, new { @Id = "frmEvaluation", @class = "margin-bottom-0" }))
+    {
+        <div class="col-md-12">
+            <div class="row">
+                <h2>Evaluación de satisfacción</h2>
+                <p>
+                    Según la experiencia que tuvo con el servicio que le hemos brindado, ¿con qué puntaje nos calificaría?,
+                    teniendo en cuenta la escala de satisfacción indicada en el cuadro de votación donde 1 es muy insatisfecho y 10 muy satisfecho.
+                </p>
+                @*<p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>*@
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="control-label">Email<span class="text-danger">*</span></label>
+                    <input type="text" id="txtEmail" class="form-control" name="evaluation.customer.idCustomer" required="required">
+                    <span id="spntxtEmail" class="text-danger"></span>
+                </div>
+                <div class="col-md-6">
+                    <label class="control-label">Nombres<span class="text-danger">*</span></label>
+                    <input type="text" id="txtName" class="form-control" name="evaluation.customer.nameCustomer" required="required">
+                    <span id="spntxtName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="control-label">Servicio</label>
+                    <select class="form-control" name="evaluation.Evaluation.idService" id="SelService">
+                        @foreach (var itm in Model.services)
+                        {
+                            <option value=@itm.idService>@itm.nameService</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="control-label" id="lblService"></label>
+                </div>
+            </div>
+            <div class="row">
+                <br />
+                <div class="col-md-12 ">
+                    <div class="col-md-1">
+                        <div class="row">
+                        </div>
+                    </div>
+                    @for (var i = 1; i < 11; i++)
+                    {
+                        <div class="col-md-1">
+                            <div class="row">
+                                <label class="btn btn-info">
+                                    <input type="radio" name="evaluation.Evaluation.score" value=@i /> @i
+                                </label>
+                            </div>
+                        </div>
+                    }
+                    <div class="col-md-1">
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <br />
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-success btn-block btn-lg" onclick="EvaluateService()">Registrar evaluación</button>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+
+            </div>
+
+
+        </div>
+    }
+
+</div>
+<div class="col-md-12">
+    <div class="row">
+
+        <br />
+        <div class="jumbotron">
+            <h1>¡Valora nuestro servicio!</h1>
+            <p class="lead">Gracias por tu visita, para votar sigue las instrucciones:</p><br />
+            <p class="lead">- Ingresa tu correo electrónico y nombres</p><br />
+            <p class="lead">- Elige el servicio</p><br />
+            <p class="lead">- Elige la puntuación</p><br />
+            <p class="lead">- Click al botón registrar</p><br />
+            @*<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+        </div>
+    </div>
+</div>
+
+
+

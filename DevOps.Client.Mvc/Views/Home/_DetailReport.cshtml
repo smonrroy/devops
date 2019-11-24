@@ -1,0 +1,40 @@
+﻿@model List<DevOps.Client.Mvc.Entity.ReportEntity>
+@{ 
+    var promScore = Model.Count>0? Model.Select(c => c.score).Average():0;
+}
+<div class="row">
+    <div class="col-md-12">
+        <label class="control-label">Score promedio: @promScore</label>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Detalle</th>
+                    <th>Cliente</th>
+                    <th>Score</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var itm in Model.OrderBy(c => c.evalDate))
+                {
+
+                    <tr>
+                        <td>@itm.service</td>
+                        <td>@itm.detailService</td>
+                        <td>@itm.customer</td>
+                        <td>@itm.score</td>
+                        <td>@itm.evalDate.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
