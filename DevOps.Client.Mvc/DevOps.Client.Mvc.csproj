@@ -220,9 +220,20 @@
     <Content Include="Data\DBModel.edmx.diagram">
       <DependentUpon>DBModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\demonrroy - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\demonrroy - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\demonrroy - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\demonrroy - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\demosm - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\demosm - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\demosm - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\demosmonrroy - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\demosmonrroy - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\demosmonrroy - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\demosmonrroy - ReadOnly - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\demosmonrroy - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\demosmonrroy - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -235,7 +246,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\ViewsJS\Evaluation.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
