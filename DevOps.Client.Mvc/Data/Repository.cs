@@ -92,9 +92,6 @@ namespace DevOps.Client.Mvc.Data
                             return oServiceResponse;
                         }
 
-                                             
-
-
                     }
                 }
                 catch (Exception e)
