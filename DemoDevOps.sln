@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.Client.Mvc", "DevOps.Client.Mvc\DevOps.Client.Mvc.csproj", "{B4027AC5-D0D4-473E-9130-DD73AD9DFF41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.Client.Mvc.Tests", "DevOps.Client.Mvc.Tests\DevOps.Client.Mvc.Tests.csproj", "{272096AD-688F-4020-9DFA-8B9CC7CC20C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.Client.Mvc.Integration.Tests", "DevOps.Client.Mvc.Tests\DevOps.Client.Mvc.Integration.Tests.csproj", "{272096AD-688F-4020-9DFA-8B9CC7CC20C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.Client.Mvc.Unit.Tests", "DevOps.Client.Mvc.Unit.Tests\DevOps.Client.Mvc.Unit.Tests.csproj", "{7FD580A0-EFAA-43BF-8FBE-29E96A7E1915}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{272096AD-688F-4020-9DFA-8B9CC7CC20C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{272096AD-688F-4020-9DFA-8B9CC7CC20C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{272096AD-688F-4020-9DFA-8B9CC7CC20C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD580A0-EFAA-43BF-8FBE-29E96A7E1915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD580A0-EFAA-43BF-8FBE-29E96A7E1915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD580A0-EFAA-43BF-8FBE-29E96A7E1915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD580A0-EFAA-43BF-8FBE-29E96A7E1915}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

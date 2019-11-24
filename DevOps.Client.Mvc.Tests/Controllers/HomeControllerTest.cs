@@ -10,7 +10,7 @@ using DevOps.Client.Mvc.Models;
 using DevOps.Client.Mvc.Data;
 using DevOps.Client.Mvc.Entity;
 
-namespace DevOps.Client.Mvc.Tests.Controllers
+namespace DevOps.Client.Mvc.Integration.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
