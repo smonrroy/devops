@@ -10,8 +10,7 @@
 
 - Link del repo: https://github.com/smonrroy/devops.git
 - Sincronización automática con repositorio en Azure devops (configurado en pipeline de azuredevops)
-- Usuario: stevemonrroy@gmail.com
-- clave: DJGzRvFawtD3tLW
+
 
 
 # Herramienta de analisis estático
