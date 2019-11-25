@@ -62,19 +62,19 @@ namespace DevOps.Client.Mvc.Integration.Tests.Controllers
             
         }
 
-        //[TestMethod]
-        //public void getReport()
-        //{
-        //    // Arrange
-        //    Repository oRepo = new Repository();
-        //    ReportResponse response = new ReportResponse();
-        //    int idService = 2;
-        //    // Act
-        //    response = oRepo.getReporte(idService);
+        [TestMethod]
+        public void getReport()
+        {
+            // Arrange
+            Repository oRepo = new Repository();
+            ReportResponse response = new ReportResponse();
+            int idService = 2;
+            // Act
+            response = oRepo.getReporte(idService);
 
-        //    // Assert
-        //    Assert.AreEqual(true,response.success);
-        //}
+            // Assert
+            Assert.AreEqual(true, response.success);
+        }
 
         [TestMethod]
         public void Report()
