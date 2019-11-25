@@ -68,7 +68,7 @@ namespace DevOps.Client.Mvc.Integration.Tests.Controllers
             // Arrange
             Repository oRepo = new Repository();
             ReportResponse response = new ReportResponse();
-            int idService = 1;
+            int idService = 2;
             // Act
             response = oRepo.getReporte(idService);
 
