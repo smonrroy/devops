@@ -44,10 +44,10 @@ namespace DevOps.Client.Mvc.Integration.Tests.Controllers
             evaluation.Evaluation.idService = 1;
             evaluation.Evaluation.evalDate = DateTime.Now;
             evaluation.Evaluation.score = 8;
-            string msj = evaluation.customer.nameCustomer +
-                                                    ", ud. ya realizó una evaluación del servicio el día de hoy " +
-                                                    evaluation.Evaluation.evalDate.ToString("dd/MM/yyyy") +
-                                                    ", puede volver a realizarlo el día de mañana ";
+            //string msj = evaluation.customer.nameCustomer +
+            //                                        ", ud. ya realizó una evaluación del servicio el día de hoy " +
+            //                                        evaluation.Evaluation.evalDate.ToString("dd/MM/yyyy") +
+            //                                        ", puede volver a realizarlo el día de mañana ";
             Repository oRepo = new Repository();
             ServiceResponse response = new ServiceResponse();
 
@@ -55,14 +55,10 @@ namespace DevOps.Client.Mvc.Integration.Tests.Controllers
             response = oRepo.insertScore(evaluation);
 
             // Assert
-            if (msj==response.message)
-            {
+
                 Assert.AreEqual(false, response.success);
-            }
-            else
-            {
-                Assert.AreEqual(true, response.success);
-            }
+       
+
             
         }
 

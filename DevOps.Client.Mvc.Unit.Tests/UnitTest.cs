@@ -9,6 +9,13 @@ namespace DevOps.Client.Mvc.Unit.Tests
         [TestMethod]
         public void Valida()
         {
+            // Arrange
+            var test = true;
+            // Act
+            
+
+            // Assert
+            Assert.AreEqual(true, test);
         }
     }
 }
