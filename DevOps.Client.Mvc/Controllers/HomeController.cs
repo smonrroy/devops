@@ -76,5 +76,12 @@ namespace DevOps.Client.Mvc.Controllers
             }
 
         }
+
+        public ActionResult Demo()
+        {
+                       
+            return View();
+
+        }
     }
 }

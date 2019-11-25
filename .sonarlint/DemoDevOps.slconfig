@@ -1,0 +1,12 @@
+{
+  "ServerUri": "https://sonarqb.azurewebsites.net/",
+  "Organization": null,
+  "ProjectKey": "DemoDevops",
+  "ProjectName": "DemoDevops",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AW6fvxEqvShSwFZUpEds",
+      "ProfileTimestamp": "2019-11-24T18:28:49-05:00"
+    }
+  }
+}
